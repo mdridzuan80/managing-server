@@ -102,7 +102,7 @@ Then, you will need to enter the password. (I usually copy paste from my notepad
 
 Change into the project directory, for example
 
-`cd seafarer`
+`cd emas-app`
 
 Then transpile the project
 
