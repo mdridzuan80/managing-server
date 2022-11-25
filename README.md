@@ -14,7 +14,7 @@ if using virtual machine (eg. UTM), use
 
 `ip addr`
 
-### To install NGINX server
+### To install NGINX web server
 
 `sudo apt install nginx`
 
@@ -30,11 +30,11 @@ if using virtual machine (eg. UTM), use
 
 `/var/www/html`
 
-### To start NGINX server
+### To start NGINX web server
 
 `sudo systemctl start nginx`
 
-### To stop NGINX server
+### To stop NGINX web server
 
 `sudo systemctl stop nginx`
 
