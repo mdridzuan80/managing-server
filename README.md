@@ -96,9 +96,9 @@ Then, you will need to enter the password. (I usually copy paste from my notepad
 
 > **_NOTE:_** Remember to setup your bitbucket password. To setup the app password go to bitbucket Personal Settings > App Passwords > (Create app password). Remember to copy and paste to somewhere safe - in a note app or whatever app.
 
-### To transpile the project (react) source code
+### To transpile the project (_ReactJS_) source code
 
-> **_NOTE:_** You need to Nodejs [installed](#To-install-NodeJS) before transpile.
+> **_NOTE:_** You need to Nodejs [installed](#To-install-NodeJS) to transpile (build) a ReactJS-based project.
 
 Change into the project directory, for example
 
