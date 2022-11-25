@@ -1,3 +1,19 @@
+### To return to the home directory
+
+`cd ~`
+
+### To check list of directories and files
+
+`ls -al`
+
+### To check machine's IP address
+
+`curl ifconfig.io`
+
+if using virtual machine (eg. UTM), use
+
+`ip addr`
+
 ### To install NGINX server
 
 `sudo apt install nginx`
@@ -76,7 +92,7 @@ Then, you will need to enter the password. (I usually copy paste from my notepad
 
 > **_NOTE:_** Remember to setup your bitbucket password. To setup the app password go to bitbucket Personal Settings > App Passwords > (Create app password). Remember to copy and paste to somewhere safe - in a note app or whatever app.
 
-### To transpile the project source code
+### To transpile the project (react) source code
 
 > **_NOTE:_** You need to Nodejs [installed](#To-install-NodeJS) before transpile.
 
@@ -92,7 +108,7 @@ You should check that there is a new directory named `build` is created. To chec
 
 `ls -al`
 
-### To copy the `build` directory(and all files in the directory) into NGINX `/var/www/html` directory
+### To copy the `build` directory into NGINX `/var/www/html` directory
 
 `sudo cp -r build/ /var/www/html/`
 
@@ -101,3 +117,40 @@ To check is the directory has been successfully copied
 `ls -al /var/www/html`
 
 (There should be the `build` directory in the `html` directory)
+
+### To configure NGINX so it point to the `build` directory
+
+Edit file `/etc/nginx/sites-available/default`
+
+`sudo gedit /etc/nginx/sites-available/default`
+
+Change the following lines:
+
+```diff
+server {
+   ...
+-  root /var/www/html;
++  root /var/www/html/build;
+   ...
+
+   	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+-		#try_files $uri $uri/ =404;
++		try_files $uri /index.html;
+	}
+    ...
+}
+```
+
+(Save the file and exit)
+
+Then check if the conf file is ok,
+
+`sudo nginx -t`
+
+Then, restart the web server
+
+`sudo systemctl restart nginx`
+
+Finally, check if the react project works on your web browser.
