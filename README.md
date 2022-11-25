@@ -22,15 +22,15 @@ if using virtual machine (eg. UTM), use
 
 `sudo apt install nginx`
 
-### Location of conf file
+### Location of NGINX's conf file
 
 `/etc/nginx/sites-available`
 
-### To edit the default conf file
+### To edit the NGINX's default conf file
 
 `sudo gedit /etc/nginx/sites-available/default`
 
-### Location of htmls
+### Location of NGINX's html files
 
 `/var/www/html`
 
@@ -46,11 +46,11 @@ if using virtual machine (eg. UTM), use
 
 `sudo nginx -t`
 
-### To reload NGINX server
+### To reload NGINX web server
 
 `sudo systemctl reload nginx`
 
-### To restart NGINX server
+### To restart NGINX web server
 
 `sudo systemctl restart nginx`
 
