@@ -68,3 +68,35 @@ Change into `node3` directory, and do
 geth --datadir . --networkid 2022 --syncmode "full" --verbosity 3 --port 30312 --http --http.addr "localhost" --http.port 8547 --authrpc.port 8553 --http.corsdomain "*" --http.vhosts "*" --http.api "admin,eth,web3,personal,miner,net,txpool,clique" --mine --miner.gasprice "0" --allow-insecure-unlock --unlock "0x..." --password password --nat=extip:127.0.0.1
 
 ```
+
+## Attach JS console to the nodes
+
+Change into `node1` directory
+
+`cd node1`
+
+then,
+
+`geth attach --datadir .`
+
+Open a new terminal and repeat for each node.
+
+## Get the `enode` value
+
+In the JS console, do
+
+`admin.nodeInfo.enode`
+
+Repeat for each node.
+
+## Add peers to a node
+
+For example for `node1`, in its JS console do,
+
+```
+admin.addPeer(<enode_node2>)   // include double quotes (" ") surrounding the enode value within the brackets.
+```
+
+```
+admin.addPeer(<enode_node3>)
+```
