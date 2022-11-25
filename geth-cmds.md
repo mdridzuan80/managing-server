@@ -94,9 +94,9 @@ Repeat for each node.
 For example for `node1`, in its JS console do,
 
 ```
-admin.addPeer(<enode_node2>)   // include double quotes (" ") surrounding the enode value within the brackets.
+admin.addPeer("<enode_node2>")
 ```
 
 ```
-admin.addPeer(<enode_node3>)
+admin.addPeer("<enode_node3>")
 ```
