@@ -34,7 +34,7 @@ Repeat the steps 1,2 and 3 for `node2` and `node3`.
 
 - name the network as `genesis` or whatever you want;
 - use public keys you stored in the previous [step](#create-account-for-each-node)
-- you can arbitrarily choose a number for the network id, for example 1957
+- you can arbitrarily choose a number for the network id, for example `2022`
 
 ## Initialise node
 
