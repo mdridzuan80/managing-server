@@ -42,6 +42,8 @@
 
 `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
 
+> **_NOTE:_** If you dont have `curl` install `sudo apt install curl`
+
 then,
 
 `source ~/.bashrc`
