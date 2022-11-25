@@ -2,6 +2,10 @@
 
 `cd ~`
 
+### To print out current working directory
+
+`pwd`
+
 ### To check list of directories and files
 
 `ls -al`
