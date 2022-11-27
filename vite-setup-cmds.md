@@ -126,6 +126,8 @@ plugins: [
 
   rules: {
 +   'react/react-in-jsx-scope': 0,
++    'react/jsx-props-no-spreading': 'off',
++    'no-param-reassign': 0,
   },
 
 ```

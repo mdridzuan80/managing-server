@@ -1,5 +1,7 @@
 # My useful commands and instructions
 
+These are my collection of commands and steps I use for my own projects.
+
 ## [Ubuntu commands](/ubuntu-cmds.md)
 
 ## [Setup geth private network](/geth-cmds.md)
