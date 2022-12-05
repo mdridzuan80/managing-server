@@ -8,21 +8,29 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 4. Database (3 panels)
 5. Light server (23 panels)
 
-| No  | Panel                                   | Section    |
-| --- | --------------------------------------- | ---------- |
-| 01  | [CPU](#cpu)                             | System     |
-| 02  | [Memory](#memory)                       | System     |
-| 03  | [Disk](#disk)                           | System     |
-| 04  | [Traffic](#traffic)                     | Network    |
-| 05  | [Peers](#peers)                         | Network    |
-| 06  | [Ingress data rate](#ingress-data-rate) | Network    |
-| 07  | [Egress data rate](#egress-data-rate)   | Network    |
-| 08  | [Ingress traffic](#ingress-traffic)     | Network    |
-| 09  | [Egress traffic](#egress-traffic)       | Network    |
-| 10  | [Latest header](#latest-header)         | Blockchain |
-| 11  | [Latest receipt](#latest-receipt)       | Blockchain |
-| 12  | [Latest block](#latest-block)           | Blockchain |
-| 13  | [Chain head](#chain-head)               | Blockchain |
+| No  | Panel                                               | Section    |
+| --- | --------------------------------------------------- | ---------- |
+| 01  | [CPU](#cpu)                                         | System     |
+| 02  | [Memory](#memory)                                   | System     |
+| 03  | [Disk](#disk)                                       | System     |
+| 04  | [Traffic](#traffic)                                 | Network    |
+| 05  | [Peers](#peers)                                     | Network    |
+| 06  | [Ingress data rate](#ingress-data-rate)             | Network    |
+| 07  | [Egress data rate](#egress-data-rate)               | Network    |
+| 08  | [Ingress traffic](#ingress-traffic)                 | Network    |
+| 09  | [Egress traffic](#egress-traffic)                   | Network    |
+| 10  | [Latest header](#latest-header)                     | Blockchain |
+| 11  | [Latest receipt](#latest-receipt)                   | Blockchain |
+| 12  | [Latest block](#latest-block)                       | Blockchain |
+| 13  | [Chain head](#chain-head)                           | Blockchain |
+| 14  | [Block processing](#block-processing)               | Blockchain |
+| 15  | [Transaction processing](#transaction-processing)   | Blockchain |
+| 16  | [Block propagation](#block-propagation)             | Blockchain |
+| 17  | [Transaction propagation](#transaction-propagation) | Blockchain |
+| 18  | [Block forwarding](#block-forwarding)               | Blockchain |
+| 19  | [Transaction fethcer](#transaction-fetcher)         | Blockchain |
+| 20  | [Data rate](#data-rate)                             | Blockchain |
+| 21  | [Session total](#session-total)                     | Blockchain |
 
 ### CPU
 
@@ -221,25 +229,24 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 
 ### Data rate
 
-```
-geth.eth/db/chaindata/disk/read.meter
-geth.eth/db/chaindata/disk/write.meter m1/mean
-geth.eth/db/chaindata/ancient/read.meter
-geth.eth/db/chaindata/ancient/write.meter
-geth.eth/db/chaindata/compact/input.meter mean
-geth.eth/db/chaindata/compact/output.meter
-```
+| No  | Measurement                                | Field |
+| --- | ------------------------------------------ | ----- |
+| 01  | geth.eth/db/chaindata/disk/read.meter      | mean  |
+| 02  | geth.eth/db/chaindata/disk/write.meter     | mean  |
+| 03  | geth.eth/db/chaindata/ancient/read.meter   | mean  |
+| 04  | geth.eth/db/chaindata/ancient/write.meter  | mean  |
+| 05  | geth.eth/db/chaindata/compact/input.meter  | mean  |
+| 06  | geth.eth/db/chaindata/compact/output.meter | mean  |
 
 ### Session total
 
-```
-geth.eth/db/chaindata/disk/read.meter
-geth.eth/db/chaindata/disk/write.meter
-geth.eth/db/chaindata/ancient/read.meter
-geth.eth/db/chaindata/ancient/write.meter
-geth.eth/db/chaindata/compact/input.meter
-geth.eth/db/chaindata/compact/output.meter
-
-```
+| No  | Measurement                                | Field |
+| --- | ------------------------------------------ | ----- |
+| 01  | geth.eth/db/chaindata/disk/read.meter      | mean  |
+| 02  | geth.eth/db/chaindata/disk/write.meter     | mean  |
+| 03  | geth.eth/db/chaindata/ancient/read.meter   | mean  |
+| 04  | geth.eth/db/chaindata/ancient/write.meter  | mean  |
+| 05  | geth.eth/db/chaindata/compact/input.meter  | mean  |
+| 06  | geth.eth/db/chaindata/compact/output.meter | mean  |
 
 ### Compaction count
