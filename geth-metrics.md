@@ -166,18 +166,18 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 
 | No  | Measurement                         | Field |
 | --- | ----------------------------------- | ----- |
-| 01  | geth.txpool/known.meter             |
-| 02  | geth.txpool/valid.meter             |
-| 03  | geth.txpool/invalid.meter           |
-| 04  | geth.txpool/underpriced.meter       |
-| 05  | geth.txpool/pending/discard.meter   |
-| 06  | geth.txpool/pending/replace.meter   |
-| 07  | geth.txpool/pending/ratelimit.meter |
-| 08  | geth.txpool/pending/nofunds.meter   |
-| 09  | geth.txpool/queued/discard.meter    |
-| 10  | geth.txpool/queued/replace.meter    |
-| 11  | geth.txpool/queued/ratelimit.meter  |
-| 12  | geth.txpool/queued/nofunds.meter    |
+| 01  | geth.txpool/known.meter             | mean  |
+| 02  | geth.txpool/valid.meter             | mean  |
+| 03  | geth.txpool/invalid.meter           | mean  |
+| 04  | geth.txpool/underpriced.meter       | mean  |
+| 05  | geth.txpool/pending/discard.meter   | mean  |
+| 06  | geth.txpool/pending/replace.meter   | mean  |
+| 07  | geth.txpool/pending/ratelimit.meter | mean  |
+| 08  | geth.txpool/pending/nofunds.meter   | mean  |
+| 09  | geth.txpool/queued/discard.meter    | mean  |
+| 10  | geth.txpool/queued/replace.meter    | mean  |
+| 11  | geth.txpool/queued/ratelimit.meter  | mean  |
+| 12  | geth.txpool/queued/nofunds.meter    | mean  |
 
 ### Block propagation
 
