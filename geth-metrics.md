@@ -10,6 +10,12 @@ There are five (5) sections of geth dashboard. Each section have their respectiv
 
 ## System
 
+A system has 3 panels:
+
+- [CPU](#cpu)
+- [Memory](#memory)
+- [Disk](#disk)
+
 ### CPU
 
 | Measurement | Field |
@@ -28,18 +34,24 @@ There are five (5) sections of geth dashboard. Each section have their respectiv
 
 ### Disk
 
+| Measurement | Field |
+|-------------|-------|
+|TODO | TODO |
+
 ## Network
+
+There are 6 panels for Network section.
+
+- [Traffic](#traffic)
+- [Peers](#peers)
+- [Ingress data rate](#ingress-data-rate)
+- [Egress data rate](#egress-data-rate)
+- [Ingress traffic](#ingress-traffic)
+- [Egress traffic](#egress-traffic)
 
 ### Traffic
 ### Peers
 ### Ingress data rate
-### Egress data rate
-### Ingress traffic
-### Egress traffic
-
-## Blockchain
-
-### Data rate
 
 ```
 geth.p2p/ingress/eth/63/0x00.meter
@@ -82,6 +94,12 @@ geth.p2p/ingress/eth/63/0x10.meter
 geth.p2p/ingress/eth/64/0x10.meter
 geth.p2p/ingress/eth/65/0x10.meter
 ```
+
+### Egress data rate
+### Ingress traffic
+### Egress traffic
+
+## Blockchain
 
 ### Block processing
 
