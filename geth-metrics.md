@@ -184,25 +184,25 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 
 ### Transaction propagation
 
-| No  | Measurement | Field |
-| --- | ----------- | ----- |
-
-geth.eth/fetcher/transaction/announces/in.meter
-geth.eth/fetcher/transaction/announces/known.meter
-geth.eth/fetcher/transaction/announces/underpriced.meter
-geth.eth/fetcher/transaction/announces/dos.meter
-geth.eth/fetcher/transaction/broadcasts/in.meter
-geth.eth/fetcher/transaction/broadcasts/known.meter
-geth.eth/fetcher/transaction/broadcasts/underpriced.meter
-geth.eth/fetcher/transaction/broadcasts/otherreject.meter
-geth.eth/fetcher/transaction/request/out.meter
-geth.eth/fetcher/transaction/request/done.meter
-geth.eth/fetcher/transaction/request/fail.meter
-geth.eth/fetcher/transaction/request/timeout.meter
-geth.eth/fetcher/transaction/replies/in.meter
-geth.eth/fetcher/transaction/replies/known.meter
-geth.eth/fetcher/transaction/replies/underpriced.meter
-geth.eth/fetcher/transaction/replies/otherreject.meter
+| No  | Measurement                                               | Field |
+| --- | --------------------------------------------------------- | ----- |
+| 01  | geth.eth/fetcher/transaction/announces/in.meter           | m1    |
+| 02  | geth.eth/fetcher/transaction/announces/known.meter        | m1    |
+| 03  | eth.eth/fetcher/transaction/announces/known.meter         | m1    |
+| 04  | geth.eth/fetcher/transaction/announces/underpriced.meter  | m1    |
+| 05  | geth.eth/fetcher/transaction/announces/dos.meter          | m1    |
+| 06  | geth.eth/fetcher/transaction/broadcasts/in.meter          | m1    |
+| 07  | geth.eth/fetcher/transaction/broadcasts/known.meter       | m1    |
+| 08  | geth.eth/fetcher/transaction/broadcasts/underpriced.meter | m1    |
+| 09  | geth.eth/fetcher/transaction/broadcasts/otherreject.meter | m1    |
+| 10  | geth.eth/fetcher/transaction/request/out.meter            | m1    |
+| 11  | geth.eth/fetcher/transaction/request/done.meter           | m1    |
+| 12  | geth.eth/fetcher/transaction/request/fail.meter           | m1    |
+| 13  | geth.eth/fetcher/transaction/request/timeout.meter        | m1    |
+| 14  | geth.eth/fetcher/transaction/replies/in.meter             | m1    |
+| 15  | geth.eth/fetcher/transaction/replies/known.meter          | m1    |
+| 16  | geth.eth/fetcher/transaction/replies/underpriced.meter    | m1    |
+| 17  | geth.eth/fetcher/transaction/replies/otherreject.meter    | m1    |
 
 ### Block forwarding
 
