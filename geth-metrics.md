@@ -8,29 +8,41 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 4. Database (3 panels)
 5. Light server (23 panels)
 
-| No  | Panel                                               | Section    |
-| --- | --------------------------------------------------- | ---------- |
-| 01  | [CPU](#cpu)                                         | System     |
-| 02  | [Memory](#memory)                                   | System     |
-| 03  | [Disk](#disk)                                       | System     |
-| 04  | [Traffic](#traffic)                                 | Network    |
-| 05  | [Peers](#peers)                                     | Network    |
-| 06  | [Ingress data rate](#ingress-data-rate)             | Network    |
-| 07  | [Egress data rate](#egress-data-rate)               | Network    |
-| 08  | [Ingress traffic](#ingress-traffic)                 | Network    |
-| 09  | [Egress traffic](#egress-traffic)                   | Network    |
-| 10  | [Latest header](#latest-header)                     | Blockchain |
-| 11  | [Latest receipt](#latest-receipt)                   | Blockchain |
-| 12  | [Latest block](#latest-block)                       | Blockchain |
-| 13  | [Chain head](#chain-head)                           | Blockchain |
-| 14  | [Block processing](#block-processing)               | Blockchain |
-| 15  | [Transaction processing](#transaction-processing)   | Blockchain |
-| 16  | [Block propagation](#block-propagation)             | Blockchain |
-| 17  | [Transaction propagation](#transaction-propagation) | Blockchain |
-| 18  | [Block forwarding](#block-forwarding)               | Blockchain |
-| 19  | [Transaction fethcer](#transaction-fetcher)         | Blockchain |
-| 20  | [Data rate](#data-rate)                             | Blockchain |
-| 21  | [Session total](#session-total)                     | Blockchain |
+| No  | Panel                                                     | Section    |
+| --- | --------------------------------------------------------- | ---------- |
+| 01  | [CPU](#cpu)                                               | System     |
+| 02  | [Memory](#memory)                                         | System     |
+| 03  | [Disk](#disk)                                             | System     |
+| 04  | [Traffic](#traffic)                                       | Network    |
+| 05  | [Peers](#peers)                                           | Network    |
+| 06  | [Eth ingress data rate](#ingress-data-rate)               | Network    |
+| 07  | [ETH egress data rate](#egress-data-rate)                 | Network    |
+| 08  | [ETH ingress traffic](#ingress-traffic)                   | Network    |
+| 09  | [ETH egress traffic](#egress-traffic)                     | Network    |
+| 10  | [Latest header](#latest-header)                           | Blockchain |
+| 11  | [Latest receipt](#latest-receipt)                         | Blockchain |
+| 12  | [Latest block](#latest-block)                             | Blockchain |
+| 13  | [Chain head](#chain-head)                                 | Blockchain |
+| 14  | [Transaction slots used](#transaction-slots-used)         | Blockchain |
+| 15  | [Gapped](#gapped)                                         | Blockchain |
+| 16  | [Locals](#locals)                                         | Blockchain |
+| 17  | [Executable transactions](#executable-transactions)       | Blockchain |
+| 18  | [Transaction pool](#transaction-pool)                     | Blockchain |
+| 19  | [Block processing](#block-processing)                     | Blockchain |
+| 20  | [Transaction processing](#transaction-processing)         | Blockchain |
+| 21  | [Block propagation](#block-propagation)                   | Blockchain |
+| 22  | [Transaction propagation](#transaction-propagation)       | Blockchain |
+| 23  | [Block forwarding](#block-forwarding)                     | Blockchain |
+| 24  | [Transaction fethcer peers](#transaction-fetcher-peers)   | Blockchain |
+| 25  | [Transaction fethcer hashes](#transaction-fetcher-hashes) | Blockchain |
+| 26  | [Reorg meters](#reorg-meters)                             | Blockchain |
+| 27  | [Reorg total meters](#reorg-total-meters)                 | Blockchain |
+| 28  | [Goroutines](#goroutines)                                 | Blockchain |
+| 29  | [Eth fetcher filter bodies](#eth-fetcher-filter-bodies)   | Blockchain |
+| 30  | [Eth fetcher filter headers](#eth-fetcher-filter-headers) | Blockchain |
+| 31  | [Data rate](#data-rate)                                   | Blockchain |
+| 32  | [Session totals](#session-totals)                         | Blockchain |
+| 33  | [Persistent size](#persistent-size)                       | Blockchain |
 
 ### CPU
 
@@ -238,7 +250,7 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 | 05  | geth.eth/db/chaindata/compact/input.meter  | mean  |
 | 06  | geth.eth/db/chaindata/compact/output.meter | mean  |
 
-### Session total
+### Session totals
 
 | No  | Measurement                                | Field |
 | --- | ------------------------------------------ | ----- |
@@ -248,5 +260,9 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 | 04  | geth.eth/db/chaindata/ancient/write.meter  | mean  |
 | 05  | geth.eth/db/chaindata/compact/input.meter  | mean  |
 | 06  | geth.eth/db/chaindata/compact/output.meter | mean  |
+
+### Compaction time
+
+### Compaction delay
 
 ### Compaction count
