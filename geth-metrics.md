@@ -1,115 +1,150 @@
 # Geth dashboard 
 
-There are five (5) sections of geth dashboard. Each section have their respective panels and each panel have their respective meansurement(s). Each measurement is associated with a field, for example `value`, or `mean` or `m1` or `count`.
+There are 59 panels and there are categorised into 5 following sections. Each panel can one or more measurements and each measurement has a field. 
 
-1. [System](#system)
-2. [Network](#network)
-3. [Blockchain](#blockchain)
-4. [Database](#database)
-5. [Light server](#light-server)
+1. System (3 panels)
+2. Network (6 panels)
+3. Blockchain (24 panels)
+4. Database (3 panels)
+5. Light server (23 panels)
 
-## System
-
-A system has 3 panels:
-
-- [CPU](#cpu)
-- [Memory](#memory)
-- [Disk](#disk)
+| No |  Panel           | Section     |
+|----|------------------|-------------|
+|01  | [CPU](#cpu)   | System |
+|02  | [Memory](#memory) | System |
+|03  | [Disk](#disk) | System |
+|04  | [Traffic](#traffic) | Network |
+|05  | [Peers](#peers) | Network |
+|06  | [Ingress data rate](#ingress-data-rate) | Network |
+|07  | [Egress data rate](#egress-data-rate) | Network |
+|08  | [Ingress traffic](#ingress-traffic) | Network |
+|09  | [Egress traffic](#egress-traffic) | Network |
+|10  | [Latest header](#latest-header) | Blockchain |
+|11  | [Latest receipt](#latest-receipt) | Blockchain |
+|12  | [Latest block](#latest-block) | Blockchain |
+|13  | [Chain head](#chain-head) | Blockchain |
 
 ### CPU
 
-| Measurement | Field |
-|-------------|-------|
-|geth.system/cpu/sysload.gauge | value |
-|geth.system/cpu/sysload.gauge | value |
-|geth.system/cpu/procload.gauge| value |
+| No | Measurement  | Field |
+|----|--------------|-------|
+|01  | `geth.system/cpu/sysload.gauge` | value |
+|02  | `geth.system/cpu/sysload.gauge` | value |
+|03  | `geth.system/cpu/procload.gauge`| value |
 
 ### Memory
 
-| Measurement | Field |
-|-------------|-------|
-|geth.system/memory/allocs.meter| mean |
-|geth.system/memory/used.gauge| mean |
-|geth.system/memory/held.gauge| mean |
+| No |  Measurement | Field |
+|----|--------------|-------|
+|01  | `geth.system/memory/allocs.meter` | mean |
+|02  | `geth.system/memory/used.gauge`| mean |
+|03  | `geth.system/memory/held.gauge`| mean |
 
 ### Disk
 
-| Measurement | Field |
-|-------------|-------|
-|TODO | TODO |
+| No | Measurement | Field |
+|----|-------------|-------|
 
-## Network
-
-There are 6 panels for Network section.
-
-- [Traffic](#traffic)
-- [Peers](#peers)
-- [Ingress data rate](#ingress-data-rate)
-- [Egress data rate](#egress-data-rate)
-- [Ingress traffic](#ingress-traffic)
-- [Egress traffic](#egress-traffic)
 
 ### Traffic
+
+| No | Measurement | Field |
+|----|-------------|-------|
+
 ### Peers
+
+| No | Measurement | Field |
+|----|-------------|-------|
+
 ### Ingress data rate
 
-```
-geth.p2p/ingress/eth/63/0x00.meter
-geth.p2p/ingress/eth/64/0x00.meter
-geth.p2p/ingress/eth/65/0x00.meter
-geth.p2p/ingress/eth/63/0x01.meter
-geth.p2p/ingress/eth/64/0x01.meter
-geth.p2p/ingress/eth/65/0x01.meter
-geth.p2p/ingress/eth/63/0x02.meter
-geth.p2p/ingress/eth/64/0x02.meter
-geth.p2p/ingress/eth/65/0x02.meter
-geth.p2p/ingress/eth/63/0x03.meter
-geth.p2p/ingress/eth/64/0x03.meter
-geth.p2p/ingress/eth/65/0x03.meter
-geth.p2p/ingress/eth/63/0x04.meter
-geth.p2p/ingress/eth/64/0x04.meter
-geth.p2p/ingress/eth/65/0x04.meter
-geth.p2p/ingress/eth/63/0x05.meter
-geth.p2p/ingress/eth/64/0x05.meter
-geth.p2p/ingress/eth/65/0x05.meter
-geth.p2p/ingress/eth/63/0x06.meter
-geth.p2p/ingress/eth/64/0x06.meter
-geth.p2p/ingress/eth/65/0x06.meter 
-geth.p2p/ingress/eth/63/0x07.meter
-geth.p2p/ingress/eth/64/0x07.meter
-geth.p2p/ingress/eth/65/0x07.meter    
-geth.p2p/ingress/eth/65/0x08.meter
-geth.p2p/ingress/eth/65/0x09.meter
-geth.p2p/ingress/eth/65/0x0a.meter
-geth.p2p/ingress/eth/63/0x0d.meter
-geth.p2p/ingress/eth/64/0x0d.meter
-geth.p2p/ingress/eth/65/0x0d.meter
-geth.p2p/ingress/eth/63/0x0e.meter
-geth.p2p/ingress/eth/64/0x0e.meter
-geth.p2p/ingress/eth/65/0x0e.meter
-geth.p2p/ingress/eth/63/0x0f.meter
-geth.p2p/ingress/eth/64/0x0f.meter
-geth.p2p/ingress/eth/65/0x0f.meter
-geth.p2p/ingress/eth/63/0x10.meter
-geth.p2p/ingress/eth/64/0x10.meter
-geth.p2p/ingress/eth/65/0x10.meter
-```
+| No | Measurement | Field |
+|----|-------------|-------|
+|01  | `geth.p2p/ingress/eth/63/0x00.meter` | m1 |
+|02  | `geth.p2p/ingress/eth/64/0x00.meter` | m1 |
+|03  | `geth.p2p/ingress/eth/65/0x00.meter` | m1 |
+|04  | `geth.p2p/ingress/eth/63/0x01.meter` | m1 |
+|05  | `geth.p2p/ingress/eth/64/0x01.meter` | m1 |
+|06  | `geth.p2p/ingress/eth/65/0x01.meter` | m1 |
+|07  | `geth.p2p/ingress/eth/63/0x02.meter` | m1 |
+|08  | `geth.p2p/ingress/eth/64/0x02.meter` | m1 |
+|09  | `geth.p2p/ingress/eth/65/0x02.meter` | m1 |
+|10  | `geth.p2p/ingress/eth/63/0x03.meter` | m1 |
+|11  | `geth.p2p/ingress/eth/64/0x03.meter` | m1 |
+|12  | `geth.p2p/ingress/eth/65/0x03.meter` | m1 |
+|13  | `geth.p2p/ingress/eth/63/0x04.meter` | m1 |
+|14  | `geth.p2p/ingress/eth/64/0x04.meter` | m1 |
+|15  | `geth.p2p/ingress/eth/65/0x04.meter` | m1 |
+|16  | `geth.p2p/ingress/eth/63/0x05.meter` | m1 |
+|17  | `geth.p2p/ingress/eth/64/0x05.meter` | m1 |
+|18  | `geth.p2p/ingress/eth/65/0x05.meter` | m1 |
+|18  | `geth.p2p/ingress/eth/63/0x06.meter` | m1 |
+|19  | `geth.p2p/ingress/eth/64/0x06.meter` | m1 |
+|20  | `geth.p2p/ingress/eth/65/0x06.meter` | m1 |
+|21  | `geth.p2p/ingress/eth/63/0x07.meter` | m1 |
+|22  | `geth.p2p/ingress/eth/64/0x07.meter` | m1 |
+|23  | `geth.p2p/ingress/eth/65/0x07.meter` | m1 |
+|24  | `geth.p2p/ingress/eth/65/0x08.meter` | m1 |
+|25  | `geth.p2p/ingress/eth/65/0x09.meter` | m1 |
+|26  | `geth.p2p/ingress/eth/65/0x0a.meter` | m1 |
+|27  | `geth.p2p/ingress/eth/63/0x0d.meter` | m1 |
+|28  | `geth.p2p/ingress/eth/64/0x0d.meter` | m1 |
+|29  | `geth.p2p/ingress/eth/65/0x0d.meter` | m1 |
+|30  | `geth.p2p/ingress/eth/63/0x0e.meter` | m1 |
+|31  | `geth.p2p/ingress/eth/64/0x0e.meter` | m1 |
+|32  | `geth.p2p/ingress/eth/65/0x0e.meter` | m1 |
+|33  | `geth.p2p/ingress/eth/63/0x0f.meter` | m1 |
+|34  | `geth.p2p/ingress/eth/64/0x0f.meter` | m1 |
+|35  | `geth.p2p/ingress/eth/65/0x0f.meter` | m1 |
+|36  | `geth.p2p/ingress/eth/63/0x10.meter` | m1 |
+|37  | `geth.p2p/ingress/eth/64/0x10.meter` | m1 |
+|38  | `geth.p2p/ingress/eth/65/0x10.meter` | m1 |
 
 ### Egress data rate
-### Ingress traffic
-### Egress traffic
+-TODO-
 
-## Blockchain
+### Ingress traffic
+-TODO-
+
+### Egress traffic
+-TODO-
+
+### Latest header
+
+| No | Measurement | Field |
+|----|-------------|-------|
+|01  | `geth.chain/head/header.gauge` | value |
+
+### Latest receipt
+
+| No | Measurement | Field |
+|----|-------------|-------|
+|01  | `geth.chain/head/receipt.gauge` | value |
+
+### Latest block
+
+| No | Measurement | Field |
+|----|-------------|-------|
+|01  | `geth.chain/head/block.gauge` | value |
+
+### Chain head
+
+| No | Measurement | Field |
+|----|-------------|-------|
+|01  | `geth.chain/head/header.gauge` | value |
+|02  | `geth.chain/head/receipt.gauge` | value |
+|03  | `geth.chain/head/block.gauge` | value |
 
 ### Block processing
 
-```
-geth.chain/execution.timer
-geth.chain/validation.timer
-geth.chain/write.timer
-geth.chain/account/reads.timer
-geth.chain/account/updates.timer
-geth.chain/account/hashes.timer
+| No | Measurement | Field |
+|----|-------------|-------|
+|01  |geth.chain/execution.timer | mean |
+|02  |geth.chain/validation.timer | mean |
+|03  |geth.chain/write.timer | mean |
+|04  |geth.chain/account/reads.timer | mean |
+|05  |geth.chain/account/updates.timer| mean |
+|06  |geth.chain/account/hashes.timer | mean |
 geth.chain/account/commits.timer
 geth.chain/storage/reads.timer
 geth.chain/storage/updates.timer
@@ -118,7 +153,6 @@ geth.chain/storage/commits.timer
 geth.chain/snapshot/account/reads.timer
 geth.chain/snapshot/storage/reads.timer
 geth.chain/snapshot/commits.timer
-```
 
 ### Transactions processing
 
@@ -208,7 +242,5 @@ geth.eth/db/chaindata/compact/input.meter
 geth.eth/db/chaindata/compact/output.meter
 
 ```
-
-## Database
 
 ### Compaction count
