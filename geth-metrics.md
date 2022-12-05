@@ -206,18 +206,18 @@ There are 59 panels and there are categorised into 5 following sections. Each pa
 
 ### Block forwarding
 
-```
-geth.eth/fetcher/block/announces/out.timer
-geth.eth/fetcher/block/broadcasts/out.timer
-```
+| No  | Measurement                                 | Field |
+| --- | ------------------------------------------- | ----- |
+| 01  | geth.eth/fetcher/block/announces/out.timer  | mean  |
+| 02  | geth.eth/fetcher/block/broadcasts/out.timer | mean  |
 
 ### Transaction fetcher
 
-```
-geth.eth/fetcher/transaction/waiting/hashes.gauge
-geth.eth/fetcher/transaction/queueing/hashes.gauge
-geth.eth/fetcher/transaction/fetching/hashes.gauge
-```
+| No  | Measurement                                        | Field |
+| --- | -------------------------------------------------- | ----- |
+| 01  | geth.eth/fetcher/transaction/waiting/hashes.gauge  | mean  |
+| 02  | geth.eth/fetcher/transaction/queueing/hashes.gauge | mean  |
+| 03  | geth.eth/fetcher/transaction/fetching/hashes.gauge | mean  |
 
 ### Data rate
 
