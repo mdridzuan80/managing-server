@@ -72,8 +72,17 @@ geth --datadir . --networkid 2022 --syncmode "full" --verbosity 3 --port 30312 -
 ## OPTIONAL: Start node with influxdb
 
 ```
-geth --datadir geth-net/node1 --networkid 2022 --syncmode "full" --verbosity 3 --port 30310 --http --http.addr "localhost" --http.port 8545 --http.corsdomain "*" --http.vhosts "*" --http.api "admin,eth,web3,personal,miner,net,txpool,clique" --mine --miner.gasprice "0" --allow-insecure-unlock --unlock "0xAe18E0CA7b92E2190C431566719417762205b623" --password geth-net/node1/password --nat=extip:127.0.0.1 --metrics.influxdbv2 --metrics.influxdb.token o0Zzfgkbww5gb5VlBGJedYDQr8gpY37TECYxtR-WujESXAZEpevk3x4jp_bGnDE-1YqUYAhQ-r3QJ4_lZkNwJQ== --metrics.influxdb.bucket geth
+geth --datadir geth-net/node1 --networkid 2022 --syncmode "full" --verbosity 3 --port 30310 --http --http.addr "localhost" --http.port 8545 --http.corsdomain "*" --http.vhosts "*" --http.api "admin,eth,web3,personal,miner,net,txpool,clique" --mine --miner.gasprice "0" --allow-insecure-unlock --unlock "0xAe18E0CA7b92E2190C431566719417762205b623" --password geth-net/node1/password --nat=extip:127.0.0.1 --metrics --metrics.influxdbv2 --metrics.influxdb.organization thuleen --metrics.influxdb.token o0Zzfgkbww5gb5VlBGJedYDQr8gpY37TECYxtR-WujESXAZEpevk3x4jp_bGnDE-1YqUYAhQ-r3QJ4_lZkNwJQ== --metrics.influxdb.bucket geth 
 ```
+
+List of options that were added above were:
+
+- `--metrics`
+- `--metrics.influxdbv2`
+- `--metrics.influxdb.organization`
+- `--metrics.influxdb.token`
+- `--metrics.influxdb.bucket`
+
 
 > Replace `metrics.influxdb.token` with your token value. If you lost it you can create it in the Influxdb WebUI at `localhost:8086`.
 
