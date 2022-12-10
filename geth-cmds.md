@@ -84,7 +84,7 @@ List of options that were added above were:
 - `--metrics.influxdb.bucket`
 
 
-> Replace `metrics.influxdb.token` with your token value. If you lost it you can create it in the Influxdb WebUI at `localhost:8086`.
+> Replace the value for `metrics.influxdb.token` option with your token value. If you lost it you can create it in the Influxdb WebUI at `localhost:8086`.
 
 ## Attach JS console to the nodes
 
