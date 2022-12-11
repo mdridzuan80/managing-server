@@ -1,6 +1,22 @@
+# Grafana
+
+To login into Grafana WebUI at `localhost:3000`, use `admin` as the username.
+
+If forgot password use command below to reset:
+
+```
+sudo grafana-cli admin reset-admin-password admin
+```
+
+To restart grafana-server:
+
+```
+sudo systemctl restart grafana-server
+```
+
 # Geth dashboard
 
-There are 59 panels and there are categorised into 5 following sections. Each panel can one or more measurements and each measurement has a field.
+There are 59 panels in Grafana and there are categorised into 5 following sections. Each panel can one or more measurements and each measurement has a field.
 
 1. System (3 panels)
 2. Network (6 panels)
