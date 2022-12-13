@@ -22,6 +22,12 @@ if using virtual machine (eg. UTM), use
 
 `ip addr`
 
+### To SCP
+
+```
+scp -P 22 README.md thuleen@10.11.12.13:~/
+```
+
 ### To install NGINX web server
 
 `sudo apt install nginx`
