@@ -72,7 +72,7 @@ geth --datadir . --networkid 2022 --syncmode "full" --verbosity 3 --port 30312 -
 ## OPTIONAL: Start node with influxdb
 
 ```
-geth --datadir geth-net/node1 --networkid 2022 --syncmode "full" --verbosity 3 --port 30310 --http --http.addr "localhost" --http.port 8545 --http.corsdomain "*" --http.vhosts "*" --http.api "admin,eth,web3,personal,miner,net,txpool,clique" --mine --miner.gasprice "0" --allow-insecure-unlock --unlock "0xAe18E0CA7b92E2190C431566719417762205b623" --password geth-net/node1/password --nat=extip:127.0.0.1 --metrics --metrics.influxdbv2 --metrics.influxdb.organization thuleen --metrics.influxdb.token o0Zzfgkbww5gb5VlBGJedYDQr8gpY37TECYxtR-WujESXAZEpevk3x4jp_bGnDE-1YqUYAhQ-r3QJ4_lZkNwJQ== --metrics.influxdb.bucket geth 
+geth --datadir geth-net/node1 --networkid 2022 --syncmode "full" --verbosity 3 --port 30310 --http --http.addr "localhost" --http.port 8545 --http.corsdomain "*" --http.vhosts "*" --http.api "admin,eth,web3,personal,miner,net,txpool,clique" --mine --miner.gasprice "0" --allow-insecure-unlock --unlock "0xAe18E0CA7b92E2190C431566719417762205b623" --password geth-net/node1/password --nat=extip:127.0.0.1 --metrics --metrics.influxdbv2 --metrics.influxdb.organization thuleen --metrics.influxdb.token o0Zzfgkbww5gb5VlBGJedYDQr8gpY37TECYxtR-WujESXAZEpevk3x4jp_bGnDE-1YqUYAhQ-r3QJ4_lZkNwJQ== --metrics.influxdb.bucket geth
 ```
 
 List of options that were added above were:
@@ -82,7 +82,6 @@ List of options that were added above were:
 - `--metrics.influxdb.organization`
 - `--metrics.influxdb.token`
 - `--metrics.influxdb.bucket`
-
 
 > Replace the value for `metrics.influxdb.token` option with your token value. If you lost it you can create it in the Influxdb WebUI at `localhost:8086`.
 
@@ -116,4 +115,14 @@ admin.addPeer("<enode_node2>")
 
 ```
 admin.addPeer("<enode_node3>")
+```
+
+## Transfer fund to an account via geth ipc console
+
+```
+geth --datadir . attach geth.ipc
+```
+
+```
+eth.sendTransaction({from: "0x_node_1_account",to: "0x_poor_thing_account", value: "100000000000000000"})
 ```
