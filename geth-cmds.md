@@ -69,6 +69,11 @@ geth --datadir . --networkid 2022 --syncmode "full" --verbosity 3 --port 30312 -
 
 ```
 
+New
+```
+geth --datadir node2 --networkid 31081957 --syncmode "full" --verbosity 3 --port 30314 --http --http.addr "127.0.0.1" --http.port 8546 --authrpc.port 8556 --http.corsdomain "*" --http.vhosts "*" --http.api "admin,eth,web3,personal,miner,net,txpool,clique" --mine --miner.gasprice "0" --miner.etherbase "0x41b5Ef72d94269cFd18CF712eD8c42BF82811140" --allow-insecure-unlock --unlock "0x41b5Ef72d94269cFd18CF712eD8c42BF82811140" --password node2/password --nodiscover
+```
+
 ## OPTIONAL: Start node with influxdb
 
 ```
